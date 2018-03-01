@@ -1,0 +1,378 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:akab_r-cache
+EELAYER 25 0
+EELAYER END
+$Descr User 7874 7874
+encoding utf-8
+Sheet 1 1
+Title "AKAB Reloaded"
+Date "2016-05-10"
+Rev "0.01"
+Comp "Released under the GPLv3"
+Comment1 "Copyright by Fabio Battaglia (2016)"
+Comment2 ""
+Comment3 ""
+Comment4 "AKAB is a PS/2 to Amiga keyboard adapter."
+$EndDescr
+$Comp
+L ATMEGA328-P IC1
+U 1 1 573216D8
+P 3700 3900
+F 0 "IC1" H 2950 5150 50  0000 L BNN
+F 1 "ATMEGA328-P" H 4100 2500 50  0000 L BNN
+F 2 "DIL28" H 3700 3900 50  0000 C CIN
+F 3 "" H 3700 3900 50  0000 C CNN
+	1    3700 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 573217B2
+P 1300 1500
+F 0 "C1" H 1325 1600 50  0000 L CNN
+F 1 "0.1uF" H 1325 1400 50  0000 L CNN
+F 2 "" H 1338 1350 50  0000 C CNN
+F 3 "" H 1300 1500 50  0000 C CNN
+	1    1300 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 573218FD
+P 1300 1800
+F 0 "#PWR?" H 1300 1550 50  0001 C CNN
+F 1 "GND" H 1300 1650 50  0000 C CNN
+F 2 "" H 1300 1800 50  0000 C CNN
+F 3 "" H 1300 1800 50  0000 C CNN
+	1    1300 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 573219BB
+P 1300 1150
+F 0 "#PWR?" H 1300 1000 50  0001 C CNN
+F 1 "VCC" H 1300 1300 50  0000 C CNN
+F 2 "" H 1300 1150 50  0000 C CNN
+F 3 "" H 1300 1150 50  0000 C CNN
+	1    1300 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 57321B94
+P 3900 1400
+F 0 "R1" V 3980 1400 50  0000 C CNN
+F 1 "10K" V 3900 1400 50  0000 C CNN
+F 2 "" V 3830 1400 50  0000 C CNN
+F 3 "" H 3900 1400 50  0000 C CNN
+	1    3900 1400
+	0    -1   1    0   
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 57321C30
+P 4250 1350
+F 0 "#PWR?" H 4250 1200 50  0001 C CNN
+F 1 "VCC" H 4250 1500 50  0000 C CNN
+F 2 "" H 4250 1350 50  0000 C CNN
+F 3 "" H 4250 1350 50  0000 C CNN
+	1    4250 1350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW1
+U 1 1 57321FBE
+P 4050 1750
+F 0 "SW1" H 4200 1860 50  0000 C CNN
+F 1 "RESET_SW" H 4050 1670 50  0000 C CNN
+F 2 "" H 4050 1750 50  0000 C CNN
+F 3 "" H 4050 1750 50  0000 C CNN
+	1    4050 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 573220CD
+P 4550 1750
+F 0 "#PWR?" H 4550 1500 50  0001 C CNN
+F 1 "GND" H 4550 1600 50  0000 C CNN
+F 2 "" H 4550 1750 50  0000 C CNN
+F 3 "" H 4550 1750 50  0000 C CNN
+	1    4550 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X03 P1
+U 1 1 5732220C
+P 2400 1550
+F 0 "P1" H 2400 1750 50  0000 C CNN
+F 1 "ISP_HEAD" H 2400 1350 50  0000 C CNN
+F 2 "" H 2400 350 50  0000 C CNN
+F 3 "" H 2400 350 50  0000 C CNN
+	1    2400 1550
+	1    0    0    -1  
+$EndComp
+Text Label 5100 4250 2    60   ~ 0
+/RESET
+Text Label 1850 1650 0    60   ~ 0
+/RESET
+$Comp
+L VCC #PWR?
+U 1 1 57322B2F
+P 2750 1350
+F 0 "#PWR?" H 2750 1200 50  0001 C CNN
+F 1 "VCC" H 2750 1500 50  0000 C CNN
+F 2 "" H 2750 1350 50  0000 C CNN
+F 3 "" H 2750 1350 50  0000 C CNN
+	1    2750 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57322B63
+P 2750 1700
+F 0 "#PWR?" H 2750 1450 50  0001 C CNN
+F 1 "GND" H 2750 1550 50  0000 C CNN
+F 2 "" H 2750 1700 50  0000 C CNN
+F 3 "" H 2750 1700 50  0000 C CNN
+	1    2750 1700
+	1    0    0    -1  
+$EndComp
+Text Label 1850 1550 0    60   ~ 0
+SCK
+Text Label 1850 1450 0    60   ~ 0
+MISO
+Text Label 2950 1550 2    60   ~ 0
+MOSI
+Text Label 5000 3300 2    60   ~ 0
+SCK
+Text Label 5000 3200 2    60   ~ 0
+MISO
+Text Label 5000 3100 2    60   ~ 0
+MOSI
+$Comp
+L VCC #PWR?
+U 1 1 5732339E
+P 2700 2750
+F 0 "#PWR?" H 2700 2600 50  0001 C CNN
+F 1 "VCC" H 2700 2900 50  0000 C CNN
+F 2 "" H 2700 2750 50  0000 C CNN
+F 3 "" H 2700 2750 50  0000 C CNN
+	1    2700 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 573233F3
+P 2700 5200
+F 0 "#PWR?" H 2700 4950 50  0001 C CNN
+F 1 "GND" H 2700 5050 50  0000 C CNN
+F 2 "" H 2700 5200 50  0000 C CNN
+F 3 "" H 2700 5200 50  0000 C CNN
+	1    2700 5200
+	1    0    0    -1  
+$EndComp
+Text Label 3250 1400 0    60   ~ 0
+/RESET
+$Comp
+L CONN_01X06 P2
+U 1 1 57323B74
+P 5350 1300
+F 0 "P2" H 5350 1650 50  0000 C CNN
+F 1 "PS/2_KB" V 5450 1300 50  0000 C CNN
+F 2 "" H 5350 1300 50  0000 C CNN
+F 3 "" H 5350 1300 50  0000 C CNN
+	1    5350 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X05 P3
+U 1 1 57323C1B
+P 6350 1300
+F 0 "P3" H 6350 1600 50  0000 C CNN
+F 1 "AMIGA_KB" V 6450 1300 50  0000 C CNN
+F 2 "" H 6350 1300 50  0000 C CNN
+F 3 "" H 6350 1300 50  0000 C CNN
+	1    6350 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57323E0A
+P 6450 1650
+F 0 "#PWR?" H 6450 1400 50  0001 C CNN
+F 1 "GND" H 6450 1500 50  0000 C CNN
+F 2 "" H 6450 1650 50  0000 C CNN
+F 3 "" H 6450 1650 50  0000 C CNN
+	1    6450 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 57323E52
+P 6650 1700
+F 0 "#PWR?" H 6650 1550 50  0001 C CNN
+F 1 "VCC" H 6650 1850 50  0000 C CNN
+F 2 "" H 6650 1700 50  0000 C CNN
+F 3 "" H 6650 1700 50  0000 C CNN
+	1    6650 1700
+	0    1    -1   0   
+$EndComp
+Text Label 6350 2000 1    60   ~ 0
+/KBRESET
+Text Label 6250 2000 1    60   ~ 0
+/KBDATA
+Text Label 6150 2000 1    60   ~ 0
+/KBCLOCK
+Text Label 5200 4400 2    60   ~ 0
+/KBRESET
+Text Label 5150 4700 2    60   ~ 0
+/KBDATA
+Text Label 5250 2800 2    60   ~ 0
+/KBCLOCK
+$Comp
+L GND #PWR?
+U 1 1 57325183
+P 5300 1650
+F 0 "#PWR?" H 5300 1400 50  0001 C CNN
+F 1 "GND" H 5300 1500 50  0000 C CNN
+F 2 "" H 5300 1650 50  0000 C CNN
+F 3 "" H 5300 1650 50  0000 C CNN
+	1    5300 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 573251D2
+P 5400 1900
+F 0 "#PWR?" H 5400 1750 50  0001 C CNN
+F 1 "VCC" H 5400 2050 50  0000 C CNN
+F 2 "" H 5400 1900 50  0000 C CNN
+F 3 "" H 5400 1900 50  0000 C CNN
+	1    5400 1900
+	1    0    0    1   
+$EndComp
+Text Label 5100 2050 1    60   ~ 0
+PS2_DATA
+Text Label 5500 1950 1    60   ~ 0
+PS2_CLK
+Text Label 5250 2900 2    60   ~ 0
+PS2_DATA
+Wire Wire Line
+	1300 1650 1300 1800
+Wire Wire Line
+	1300 1150 1300 1350
+Wire Wire Line
+	4250 1350 4250 1400
+Wire Wire Line
+	4250 1400 4050 1400
+Wire Wire Line
+	4350 1750 4550 1750
+Wire Wire Line
+	2650 1450 2750 1450
+Wire Wire Line
+	2750 1450 2750 1350
+Wire Wire Line
+	2650 1650 2750 1650
+Wire Wire Line
+	2750 1650 2750 1700
+Wire Wire Line
+	2150 1450 1850 1450
+Wire Wire Line
+	2150 1550 1850 1550
+Wire Wire Line
+	2150 1650 1850 1650
+Wire Wire Line
+	2650 1550 2950 1550
+Wire Wire Line
+	4700 3100 5000 3100
+Wire Wire Line
+	4700 3200 5000 3200
+Wire Wire Line
+	4700 3300 5000 3300
+Wire Wire Line
+	2700 2750 2700 3100
+Wire Wire Line
+	2700 3100 2800 3100
+Wire Wire Line
+	2800 2800 2700 2800
+Connection ~ 2700 2800
+Wire Wire Line
+	2800 5000 2700 5000
+Wire Wire Line
+	2700 5000 2700 5200
+Wire Wire Line
+	2800 5100 2700 5100
+Connection ~ 2700 5100
+Wire Wire Line
+	3750 1750 3650 1750
+Wire Wire Line
+	3650 1750 3650 1400
+Wire Wire Line
+	3250 1400 3750 1400
+Connection ~ 3650 1400
+Wire Wire Line
+	4700 4250 5100 4250
+Wire Wire Line
+	6450 1650 6450 1500
+Wire Wire Line
+	6550 1500 6550 1700
+Wire Wire Line
+	6550 1700 6650 1700
+Wire Wire Line
+	6350 1500 6350 2000
+Wire Wire Line
+	6250 1500 6250 2000
+Wire Wire Line
+	6150 1500 6150 2000
+Wire Wire Line
+	4700 4400 5200 4400
+Wire Wire Line
+	4700 4700 5150 4700
+Wire Wire Line
+	4700 2800 5250 2800
+Wire Wire Line
+	5300 1500 5300 1650
+Wire Wire Line
+	5400 1900 5400 1500
+Wire Wire Line
+	5100 1500 5100 2050
+Wire Wire Line
+	5500 1500 5500 1950
+Wire Wire Line
+	5250 2900 4700 2900
+Text Label 5150 4600 2    60   ~ 0
+PS2_CLK
+Wire Wire Line
+	4700 4600 5150 4600
+$EndSCHEMATC
